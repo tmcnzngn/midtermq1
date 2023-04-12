@@ -1,0 +1,69 @@
+﻿using System;
+ 
+class GFG {
+ 
+    
+    static long ASCIIkelimetoplamı(String str, long []sumArr)
+    {
+        int l = str.Length;
+        int timer = 0;
+        long toplam = 0;
+        long bigtoplam = 0;
+        for (int i = 0; i < l; i++) {
+ 
+          
+            if (str[i] == ' ')
+            {
+                bigtoplam += toplam;
+                sumArr[timer++] = toplam;
+                sum = 0;
+            }
+            else
+ 
+      
+                sum += str[i];        
+        }
+ 
+        
+        sumArr[pos] = toplam;
+        bigtoplam += sum;
+        return bigSum;
+    }
+ 
+  
+    public static void Main()
+    {
+        String str = "Akay Timuçin Zengin " +
+                     "düşünceli ";
+ 
+       
+        int ctr = 0;
+        for (int i = 0; i < str.Length; i++)
+            if (str[i] == ' ')
+                ctr++;
+         
+        long []sumArr = yeni uzunluk[ctr + 1];
+ 
+        
+        long sum = ASCIIkelimetoplamı(str, sumArr);
+ 
+        Console.WriteLine("ASCII değerler toplamı:");
+        for (int i = 0; i <= ctr; i++)
+            Console.Write(sumArr[i] + " ");
+             
+        Console.WriteLine();
+        Console.Write("Toplam İsmin değerleri -> " + toplam);
+
+
+    }
+}
+
+
+Input : Akatuze
+
+
+
+
+Output : Sum of ASCII values:
+         65 107 97 116 117 122 101 
+         Total sum -> 725
